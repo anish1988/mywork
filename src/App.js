@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 //import ImageDisplay from "./components/ImageDisplay";
 import ActionModal from "./components/ModelPopup";
+import MenuItemsEx2 from "./components/MenuItmesEx2";
 
 const countries = [
   { name: "India", value: "IN", cities: ["Delhi", "Mumbai"] },
@@ -22,6 +23,7 @@ export default function App() {
     <div className="App">
       {/* 1st DropDown */}
      <ActionModal/>
+     <MenuItemsEx2> Menu Example 2</MenuItemsEx2>
       <select
         value={country}
         onChange={(e) => {
